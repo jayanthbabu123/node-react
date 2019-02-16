@@ -9,6 +9,7 @@ if (!fs.existsSync(__dirname + '/config/info.json')) {
     }))
 }
 
+
 app.use(bodyParser.json());
 
 app.use(function (req, res, next) {
