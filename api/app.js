@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var app = express();
+
 if (!fs.existsSync(__dirname + '/config/info.json')) {
     fs.writeFile(__dirname + '/config/info.json', JSON.stringify({
         "info": []
